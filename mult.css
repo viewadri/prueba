@@ -1,0 +1,27 @@
+body {
+	background-image:
+		url(/mult/img/15.jpg);
+	background-repeat: repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: opx;
+	
+}
+
+.tableMult{
+	border: 1px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	width:50%;
+	font-weight: bold;
+	text-align:center;
+}
+
+td:hover
+{
+	background-color: blue;
+	font-style: italic;
+
+}
