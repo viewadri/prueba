@@ -12,7 +12,7 @@
 <body>
 <table width="100%">
 
-<tr><td></td><td align="center"><h2>Tabla de Multiplicar</h2></td>
+<tr><td></td><td align="center" style="color:#088A4B"><h2>"Tabla de Multiplicar"</h2></td>
 <td align="right"></td>
 </tr>
 </table>
@@ -30,7 +30,7 @@ dim k
 dim num
 num = CInt(Request.Form("numero"))
 if num<=100 Then
-response.write num
+
 i=1
 do while i<=num
 j=1
@@ -39,7 +39,7 @@ k=i*j
 response.write "<td>"&k&"</td>"
 j = j+1
 Loop
-response.write "<tr><td></td></tr>"
+response.write "<tr></tr>"
 i=i+1
 Loop
 response.write"</table>"
