@@ -18,7 +18,7 @@
 </table>
 <hr>
 <form action="ejer.asp" method="post">
-<b><style="color:#8E2323">Introducir numero</b>
+<b>Introducir Número</b>
 <input type ='text' name ='numero' size="10" /><br/><br /><br/>
 <input type ='submit' value ='Mostrar' />
 </form>
@@ -29,6 +29,7 @@ dim j
 dim k
 dim num
 num = CInt(Request.Form("numero"))
+if num<=100 Then
 response.write num
 i=1
 do while i<=num
@@ -42,6 +43,10 @@ response.write "<tr><td></td></tr>"
 i=i+1
 Loop
 response.write"</table>"
+else
+
+response.write ("<script>alert(""Solo muestra hasta el 100"")</script>")
+End if
 %>
 
 </body>
